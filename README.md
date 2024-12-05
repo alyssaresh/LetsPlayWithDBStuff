@@ -1,4 +1,4 @@
-# Lets Play With DB Stuff
+# Let's Play With DB Stuff
 
 Recall out introduction to MySQL, and the databases we've created. Let's combine that with the skills you've picked up from our introduction to JDBC, Object-oriented design, TDD, String formatting, and the lessons we've learned at the farm.
 
