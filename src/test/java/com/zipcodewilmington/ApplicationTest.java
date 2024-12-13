@@ -11,7 +11,7 @@ public class ApplicationTest {
 
     @Test
     public void testStudentCreation() {
-        Student student = new Student(1, "Ron Johnson", "1A", "likes Java");
+        Student student = new Student("Ron Johnson", "1A", "likes Java");
         assertEquals("Ron Johnson", student.getName());
     }
 
@@ -23,13 +23,13 @@ public class ApplicationTest {
 
     @Test
     public void testStudentGetClassroom(){
-        Student student = new Student(1, "Ron Johnson", "1A", "likes Java");
+        Student student = new Student("Ron Johnson", "1A", "likes Java");
         assertEquals("1A", student.getClassroom());
     }
 
     @Test
     public void testStudentGetNotes(){
-        Student student = new Student(1, "Ron Johnson", "1A", "likes Java");
+        Student student = new Student("Ron Johnson", "1A", "likes Java");
         assertEquals("likes Java", student.getNotes());
     }
 }
