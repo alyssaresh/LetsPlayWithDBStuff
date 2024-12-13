@@ -32,4 +32,22 @@ public class ApplicationTest {
         Student student = new Student("Ron Johnson", "1A", "likes Java");
         assertEquals("likes Java", student.getNotes());
     }
+
+    @Test
+    public void testTeacherCreation() {
+        Teacher teacher = new Teacher("Sam", "Greloch", Teacher.Specialty.MIDDLE_TIER);
+        assertEquals("Sam", teacher.getFirstName());
+    }
+
+    @Test
+    public void testTeacherGetLastName() {
+        Teacher teacher = new Teacher("Sam", "Greloch", Teacher.Specialty.MIDDLE_TIER);
+        assertEquals("Greloch", teacher.getLastName());
+    }
+
+    @Test
+    public void testTeacherGetSpecialty() {
+        Teacher teacher = new Teacher("Sam", "Greloch", Teacher.Specialty.MIDDLE_TIER);
+        assertEquals(Teacher.Specialty.MIDDLE_TIER, teacher.getSpecialty());
+    }
 }
