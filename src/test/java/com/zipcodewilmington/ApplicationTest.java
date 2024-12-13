@@ -80,4 +80,46 @@ public class ApplicationTest {
         TMeta t_meta = new TMeta(5,2, 4, 1);
         assertEquals(5, t_meta.getId());
     }
+
+    @Test
+    public void assignmentGetName() {
+        Assignment assignment = new Assignment("Pokemon Lab", "https://github.com/Zipcoder/PokemonSqlLab", 4);
+        assertEquals("Pokemon Lab", assignment.getName());
+    }
+
+    @Test
+    public void assignmentGetUrl() {
+        Assignment assignment = new Assignment("Pokemon Lab", "https://github.com/Zipcoder/PokemonSqlLab", 4);
+        assertEquals("https://github.com/Zipcoder/PokemonSqlLab", assignment.getUrl());
+    }
+
+    @Test
+    public void assignmentGetTeacher_Id() {
+        Assignment assignment = new Assignment("Pokemon Lab", "https://github.com/Zipcoder/PokemonSqlLab", 4);
+        assertEquals(4, assignment.getTeacherId());
+    }
+
+    @Test
+    public void assignmentGetId() {
+        Assignment assignment = new Assignment(1,"Pokemon Lab", "https://github.com/Zipcoder/PokemonSqlLab", 4);
+        assertEquals(1, assignment.getId());
+    }
+
+    @Test
+    public void submissionGetId() {
+        Submission submission = new Submission(1, 40, 3);
+        assertEquals(1, submission.getId());
+    }
+
+    @Test
+    public void submissionGetStudentId() {
+        Submission submission = new Submission(40, 3);
+        assertEquals(40, submission.getStudentId());
+    }
+
+    @Test
+    public void submissionGetAssignmentId() {
+        Submission submission = new Submission(40, 3);
+        assertEquals(3, submission.getAssignmentId());
+    }
 }
